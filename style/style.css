@@ -9,9 +9,9 @@
 
 body {
     background-color: #EBE5C5;
-    height: 100vh;
+    min-height: 100dvh;
     margin: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
 }
 
 header {
@@ -51,11 +51,11 @@ nav > ul {
     padding-left: 0px;
 }
 
-nav > ul > li {
+nav li {
     display: inline-block;   
 }
 
-nav > ul > li > a {
+nav a {
     font-family: Arial, verdana, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: bold;
@@ -67,7 +67,7 @@ nav > ul > li > a {
     transition-duration: .3s;
 }
 
-nav > ul > li > a:hover {
+nav a:hover {
     background-color: #2EA564;
     margin: 0px 5px 0px 5px;
     color: #063D1E;
@@ -104,7 +104,7 @@ article > h2 {
     margin: 0px;
 }
 
-article > p , aside > p {
+article p {
     font-family: Arial, Verdana, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: normal;
@@ -116,7 +116,7 @@ article > p , aside > p {
 
 }
 
-article > p > strong, aside > p > strong {
+article strong {
     font-weight: bold;
     color: #095d2d;
 }
@@ -182,14 +182,14 @@ aside > h3 {
     background-color: #1A5C37;
 }
 
-aside ul {
-    list-style-type: "✔  ";
+aside > ul {
+    list-style-type: "✔\00A0\00A0";
     list-style-position: inside;
     padding: 0px;
     columns: 2;
 }
 
-aside > ul > li {
+aside li {
     font-family: Arial, Verdana, Helvetica, sans-serif;
     font-size: 1em;
 }
@@ -209,14 +209,14 @@ footer > p {
     margin-bottom: 0px;
 }
 
-footer > p > small > a {
+footer a {
     font-family: Arial, Verdana, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
 
-footer > p > small > a:hover {
+footer a:hover {
     color: #87E2AF;
     text-decoration: underline;
 }
